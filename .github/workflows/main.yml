@@ -17,7 +17,7 @@ jobs:
         with:
           python-version: ${{ matrix.python }}
       - name: Install ffmpeg
-        run: sudo apt install -y --no-install-recommends ffmpeg
+        run: sudo apt install -y --no-install-recommends ffmpeg python3-pymad python3-gi gir1.2-gtk-3.0
       - name: Install tox and any other packages
         run: pip install tox
       - name: Run tox
