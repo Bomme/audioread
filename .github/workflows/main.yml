@@ -18,9 +18,9 @@ jobs:
           python-version: ${{ matrix.python }}
       - name: Install audio libs
         run: |
-        sudo apt install -y --no-install-recommends ffmpeg
-        sudo apt install -y --no-install-recommends libmad0 libmad0-dev
-        sudo apt install -y --no-install-recommends libgirepository1.0-dev pkg-config python3-dev gir1.2-gtk-3.0
+          sudo apt install -y --no-install-recommends ffmpeg
+          sudo apt install -y --no-install-recommends libmad0 libmad0-dev
+          sudo apt install -y --no-install-recommends libgirepository1.0-dev pkg-config python3-dev gir1.2-gtk-3.0
       - name: Install tox and any other packages
         run: pip install tox
       - name: Run tox
